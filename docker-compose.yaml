@@ -2,8 +2,8 @@ services:
   jekyll-site:
     image: jekyll-site
     build: .
-    volumes: [ .:/usr/src/app ]
-    ports: [ 4000:4000 ]
-    user: "${UID}:${GID}"
+    volumes: [ .:/usr/src/app:ro ]
+    ports: [ "127.0.0.1:4000:4000" ]
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
     environment: [ JEKYLL_ENV=docker ]
-    command: jekyll serve -H 0.0.0.0 -w --config _config.yml,_config_docker.yml
+    command: bundle exec jekyll serve -H 0.0.0.0 -w --force_polling --config _config.yml,_config_docker.yml --destination /tmp/jekyll-site

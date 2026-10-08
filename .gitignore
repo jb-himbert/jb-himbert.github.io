@@ -1,0 +1,9 @@
+# Local Jekyll output and dependencies
+_site/
+_preview/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+.bundle/
+vendor/
+node_modules/

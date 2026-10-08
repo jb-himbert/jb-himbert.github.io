@@ -1,0 +1,6 @@
+# Replace this path when uploading a new short CV.
+short_cv: /files/CV/2026-10-08_HIMBERT_JeanBaptiste.pdf
+# Set this to a PDF path when a separate academic CV is available.
+academic_cv:
+# Enable only when the manuscript status is ready to be made public.
+show_manuscript_status: true

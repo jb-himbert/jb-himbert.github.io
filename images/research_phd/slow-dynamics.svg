@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" role="img" aria-labelledby="title desc">
+  <title id="title">Slow transitions between metastable states</title>
+  <desc id="desc">A schematic energy landscape with two wells separated by a barrier. This conceptual illustration is not a research result.</desc>
+  <defs>
+    <linearGradient id="fill" x2="0" y2="1">
+      <stop offset="0" stop-color="#bbdfdc" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#eaf5f4" stop-opacity=".3"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse">
+      <path d="M0 0L8 4L0 8" fill="none" stroke="#b3693e" stroke-width="1.5"/>
+    </marker>
+  </defs>
+  <rect width="720" height="380" fill="#f5f9fa"/>
+  <path d="M65 80C120 90 110 275 205 275S290 115 360 115S425 260 520 260S595 105 655 65V310H65Z" fill="url(#fill)"/>
+  <path d="M65 80C120 90 110 275 205 275S290 115 360 115S425 260 520 260S595 105 655 65" fill="none" stroke="#226e78" stroke-width="4"/>
+  <path d="M70 315H657M70 315V45" fill="none" stroke="#526478" stroke-width="1.5"/>
+  <path d="M224 205C300 55 416 55 494 193" fill="none" stroke="#b3693e" stroke-width="2.5" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+  <g fill="#226e78">
+    <circle cx="186" cy="259" r="5"/><circle cx="203" cy="265" r="5"/><circle cx="218" cy="257" r="5"/>
+    <circle cx="500" cy="247" r="5"/><circle cx="521" cy="250" r="5"/><circle cx="537" cy="244" r="5"/>
+  </g>
+  <g font-family="Arial, sans-serif" text-anchor="middle" fill="#33465a">
+    <text x="205" y="300" font-size="17">Metastable state A</text>
+    <text x="520" y="300" font-size="17">Metastable state B</text>
+    <text x="360" y="63" font-size="18" fill="#92542f">Rare transition</text>
+    <text x="360" y="352" font-size="18">Slow collective variable</text>
+    <text x="29" y="181" font-size="17" transform="rotate(-90 29 181)">Energy (schematic)</text>
+  </g>
+</svg>

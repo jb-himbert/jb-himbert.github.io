@@ -1,0 +1,16 @@
+<div class="research-cards">
+  {% for project in site.data.research %}
+  <article class="research-card">
+    <div class="research-card__body">
+      <p class="research-card__context">{{ project.context }}</p>
+      <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+      <p>{{ project.summary }}</p>
+      <p class="research-card__topics"><strong>Topics:</strong> {{ project.topics }}</p>
+      {% if project.current and site.data.profile.show_manuscript_status %}
+      <p class="research-card__status">Current work: reparametrization of slow modes for collective-variable discovery — manuscript in preparation.</p>
+      {% endif %}
+      <a class="research-card__more" href="{{ project.url | relative_url }}" aria-label="Read more about {{ project.title | escape }}">Read more <span aria-hidden="true">→</span></a>
+    </div>
+  </article>
+  {% endfor %}
+</div>

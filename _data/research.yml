@@ -1,0 +1,22 @@
+- title: Learning slow collective variables for molecular dynamics
+  context: PhD · École des Ponts / Inria · 2025–present
+  url: /research/collective-variables/
+  image: /images/research_phd/slow-dynamics.svg
+  image_alt: Schematic of two metastable states separated by an energy barrier, with a slow collective variable along the horizontal axis.
+  summary: I am interested in finding the best way to represent a molecular system to facilitate enhanced sampling. One way to do that uses spectral methods to identify slow modes that drive metastability.
+  topics: molecular dynamics · metastability · representation learning · enhanced sampling
+  current: true
+- title: Scattering transforms for physical systems
+  context: ENS Ulm · Research internship · 2024
+  url: /research/scattering/
+  image: /images/research_ens/scale_dependencies.png
+  image_alt: Two example signals and their wavelet representations across scales.
+  summary: At ENS, I developped an efficient and interpretable diffusion generative model using scattering-spectra models and applied the framework to generate synthetic Lagrangian turbulence trajectories.
+  topics: scattering transforms · wavelets · turbulence · scientific machine learning
+- title: Foveated multiscale tokenization for vision transformers
+  context: Flatiron Institute · Research internship · 2024
+  url: /research/foveated-tokenization/
+  image: /images/research_flatiron/multiscale_tokenization.png
+  image_alt: Wavelet decomposition of an astronomical image into multiscale patches and extraction of a fovea.
+  summary: At the Flatiron Institute, I compared tokenization schemes for astrophysical images and developed a foveated multiscale tokenizer computed efficiently using the discrete wavelet transform.
+  topics: vision transformers · wavelets · multiscale tokenization · generative modelling

@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Jean-Baptiste Himbert"
 title_separator          : "-"
 name                     : &name "Jean-Baptiste Himbert"
-description              : &description "Jean-Baptiste Himbert's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "PhD researcher in machine learning, molecular dynamics and applied mathematics. Research on collective variables, scattering transforms and multiscale tokenization."
 url                      : "https://jb-himbert.github.io" # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,9 +26,9 @@ author:
   avatar           : "photo_CV_clean.jpg"
   name             : "Jean-Baptiste Himbert"
   pronouns         : # example: "she/her"  
-  bio              : "PhD student in Applied Mathematics"
+  bio              : "PhD researcher in machine learning and molecular dynamics"
   location         : "Paris"
-  employer         : "ENPC"
+  employer         : "École des Ponts · Inria"
   uri              : # URL
   email            : "jean-baptiste.himbert@enpc.fr" 
 
@@ -125,7 +125,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true
   path                   : # blank (default) uses feed.xml
 
 
@@ -166,6 +166,38 @@ include:
   - _pages
   - files
 exclude:
+  # Keep template examples as source references, without publishing them.
+  - _posts
+  - _drafts
+  - _publications
+  - _talks
+  - _portfolio
+  - _teaching/2014-spring-teaching-1.md
+  - _teaching/2015-spring-teaching-2.md
+  - _pages/publications.html
+  - _pages/talks.html
+  - _pages/talkmap.html
+  - _pages/cv-json.md
+  - _pages/markdown.md
+  - _pages/non-menu-page.md
+  - _pages/archive-layout-with-content.md
+  - _pages/collection-archive.html
+  - _pages/page-archive.html
+  - _pages/category-archive.html
+  - _pages/tag-archive.html
+  - _pages/year-archive.html
+  - markdown_generator
+  - scripts
+  - talkmap
+  - talkmap.py
+  - talkmap.ipynb
+  - talkmap_out.ipynb
+  - CONTRIBUTING.md
+  - README.md
+  - LOCAL_PREVIEW.md
+  - docker-compose.yaml
+  - Gemfile.lock
+  - package-lock.json
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

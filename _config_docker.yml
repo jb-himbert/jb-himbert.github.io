@@ -1,1 +1,3 @@
-url: ""
+url: "http://localhost:4000"
+# Match GitHub Pages and disable the legacy Sass converter's disk cache.
+safe: true
